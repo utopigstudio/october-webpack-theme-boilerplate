@@ -1,0 +1,45 @@
+a {
+	transition: color 0.2s;
+}
+
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+.btn {
+	@include font-size(16);
+	text-align: center;
+	color: $white;
+	font-weight: 400;
+	background-color: $accent-color-1;
+	padding: 0.8em 1.5em;
+	border-radius: 4px;
+	letter-spacing: 0.3px;
+	display: inline-block;
+	transition: all .15s ease;
+	cursor: pointer;
+	border: 1px solid $accent-color-1;
+
+	&:hover {
+		background-color: #3bd87f;
+		box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+		transform: translateY(-2px);
+		transition: all .15s ease;
+	}
+}
+
+.btn-secondary {
+	border: 1px solid $accent-color-1;
+	background-color: $white;
+	color: $accent-color-1;
+	box-shadow: none;
+
+	&:hover {
+		color: $white;
+	}
+}

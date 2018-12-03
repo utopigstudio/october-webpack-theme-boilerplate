@@ -1,0 +1,47 @@
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Utopig Studio">
+        <meta name="generator" content="Utopig Studio">
+
+        <title>{{ this.page.title }} - Utopig Studio</title>
+
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="description" content="{{ this.page.meta_description }}">
+
+        <meta property="og:title" content="{{ this.page.meta_title }}" />
+        <meta property="og:description" content="{{ this.page.meta_description }}" />
+
+        <meta property="og:url" content="{{ url_current() }}" />
+        <meta property="og:image" content="" />
+
+        <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}" type="image/png">
+        <link rel="icon" href="{{ 'assets/images/favicon.png'|theme }}" type="image/png">
+
+        <link href="{{ 'assets/css/styles.css'|theme }}" rel="stylesheet">
+
+        {% styles %}
+
+    </head>
+    <body class="{{ this.page.bodyClass }}">
+        <div id="js--webapp">
+
+            {% partial 'header' %}
+
+            {% page %}
+
+            {% partial 'footer' %}
+
+        </div>
+
+        <script src="{{ 'assets/js/scripts.js'|theme }}"></script>
+
+        {% framework extras %}
+    
+        {% scripts %}
+
+    </body>
+</html>

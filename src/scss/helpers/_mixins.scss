@@ -1,0 +1,41 @@
+//allows to set a font size in rem using pixels
+@mixin font-size($sizeValue: 16) {
+  font-size: ($sizeValue) + px;
+  font-size: ($sizeValue / 16) + rem;
+}
+
+@mixin easeOut {
+    transition: all .35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@mixin boxShadow {
+    box-shadow: 0 2px 12px 0 rgba(35,25,25,0.13);
+}
+
+@mixin clearfix() {
+    *zoom: 1;
+    &:after,
+    &:before {
+        display: table;
+        clear: both;
+        content: "";
+        line-height: 0;
+    }
+}
+ 
+//these four properties will center a child element both horizontally and vertically inside, assuming the parent element has position: relative;
+//https://css-tricks.com/snippets/sass/centering-mixin/ 
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}

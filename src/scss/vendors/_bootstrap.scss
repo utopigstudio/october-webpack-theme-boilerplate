@@ -1,0 +1,12 @@
+/*
+This is an example to show how you can import just the bootstrap styles that you need
+In this example we load the bootstrap grid + modal + carousel
+*/
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/mixins/transition";
+@import "../../node_modules/bootstrap/scss/mixins/border-radius";
+@import "../../node_modules/bootstrap/scss/mixins/hover";
+@import "../../node_modules/bootstrap/scss/mixins/box-shadow";
+@import "../../node_modules/bootstrap/scss/mixins/caret";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/carousel";

@@ -1,0 +1,9 @@
+.home__section {
+	margin-top: 3rem;
+}
+
+.home__sec-title {
+	@include font-size(28);
+	text-align: center;
+	font-weight: 400;
+}
