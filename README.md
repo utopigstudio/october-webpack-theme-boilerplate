@@ -17,13 +17,13 @@ To use it:
 - Activate the theme from October backend settings
 
 To modify it:
-- Open a terminal, go you theme folder and run `npm install` (node_modules folder will be created)
+- Open a terminal, go to your theme folder and run `npm install` (node_modules folder will be created)
 - Install more packages using `npm install --save`
 - Require your installed packages in src/js/app.js
 - Modify the js and scss files
 - Run `npm run dev` (`npm run watch` to recompile when something changes)
 - [Add new pages, partials, content files...](https://octobercms.com/docs/cms/themes)
-- Run `npm run prod` when you are ready for for production
+- Run `npm run prod` when you are ready for production
 - You don't need to upload node_modules and src folders to the production host if you don't compile your assets there
 
 Enjoy!

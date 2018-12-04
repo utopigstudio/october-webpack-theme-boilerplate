@@ -1,9 +1,68 @@
+.home {
+	background-color: #52278E;
+}
+
+.home__github {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+
+.home__utopig {
+	position: absolute;
+	right: 1rem;
+	top: .6rem;
+}
+
+.header {
+	text-align: center;
+	padding: 5rem 0 5rem;
+	color: $white;
+}
+
+.header__title {
+	font-weight: 600;
+}
+
+.header__subtitle {
+	@include font-size(18);
+	margin-top: 1em;
+}
+
+.home__content {
+	background-image: linear-gradient(-8deg, #52278E 4%, #602FA4 94%);
+	padding: 3rem 0 7rem;
+}
+
 .home__section {
 	margin-top: 3rem;
 }
 
 .home__sec-title {
-	@include font-size(28);
-	text-align: center;
-	font-weight: 400;
+	@include font-size(22);
+	font-weight: 600;
+	color: $white;
+	margin-bottom: 1.5rem;
+}
+
+.home__indent {
+	padding-left: 2rem;
+
+	ul {
+		color: $white;
+	}
+
+	li {
+		@include font-size(15);
+		margin-bottom: 1em;
+	}
+}
+
+.home__logos {
+	margin-top: -2.3rem;
+	
+	p {
+		color: $white;
+		margin-top: -.6rem;
+	}
 }

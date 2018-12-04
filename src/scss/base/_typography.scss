@@ -13,38 +13,70 @@ body {
 	color: $black;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
 	font-family: $font-headings;
-	@include font-size(66);
 	margin: 0;
+}
+
+h1 {
+	@include font-size(48);
+	line-height: 1.05;
 }
 
 h2 {
-	font-family: $font-headings;
-	@include font-size(53);
-	margin: 0;
+	@include font-size(36);
+	line-height: 1.25;
+	
 }
 
 h3 {
-	font-family: $font-headings;
-	@include font-size(45);
-	margin: 0;
+	@include font-size(28);
+	line-height: 1.25;
 }
 
 h4 {
-	font-family: $font-headings;
-	@include font-size(36);
-	margin: 0;
+	@include font-size(18);
+	line-height: 1.12;
 }
 
-h5 {
-	font-family: $font-headings;
-	@include font-size(24);
-	margin: 0;
+@media (max-width: $lg) {
+
+	h1 {
+		@include font-size(40);
+		line-height: 1.125;
+	}
+
+	h2 {
+		@include font-size(32);
+		line-height: 1.25;
+	}
+
+	h3 {
+		@include font-size(24);
+		line-height: 1.25;
+	}
+}
+
+@media (max-width: $md) {
+
+	h1 {
+		@include font-size(32);
+		line-height: 1.25;
+	}
+
+	h2 {
+		@include font-size(22);
+		line-height: 1.15;
+	}
+
+	h3 {
+		@include font-size(32);
+		line-height: 1.13;
+	}
 }
 
 p {
 	font-family: $font-paragraphs;
-	@include font-size(14);
+	@include font-size(15);
 	line-height: 1.5;
 }

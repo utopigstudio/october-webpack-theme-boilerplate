@@ -41,7 +41,8 @@ for more info check https://www.sitepoint.com/architecture-sass-project/
 @import "base/typography";
 
 // components
-@import "components/example";
+@import "components/footer";
+@import "components/nav";
 
 // pages
 @import "pages/home";

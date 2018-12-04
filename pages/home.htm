@@ -4,7 +4,91 @@ layout = "default"
 is_hidden = 0
 
 [viewBag]
+
 ==
-<div>
-Hello I'm the home page
+<?php
+function onStart()
+{
+    $this->page['bodyClass'] = 'home';
+}
+?>
+==
+<a href="https://github.com/utopigstudio/october-webpack-theme-boilerplate" class="home__github" target="_blank">
+	<img src="{{ 'assets/images/github-icon.svg'|theme }}" alt="Github icon">
+</a>
+<a href="http://utopigstudio.com" class="home__utopig" target="_blank">
+	<img src="{{ 'assets/images/utopig-icon.svg'|theme }}" class="home__utopig" alt="Utopig Studio icon, which is a flying pig">
+</a>
+
+<div class="container">
+	<div class="header">
+		<h1 class="header__title">October CMS Webpack Theme Boilerplate</h1>
+		<p class="header__subtitle">A Bootstrap + jQuery + Webpack Theme Boilerplate for October CMS</p>
+	</div>
 </div>
+
+<div class="home__content">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-xl-11">
+				<div class="home__section">
+					<h3 class="home__sec-title">It includes</h3>
+					<div class="home__indent home__logos">
+						<div class="row">
+							<div class="col-6 col-md-3 col-lg-2 text-center">
+								<img class="img-fluid" src="{{ 'assets/images/npm-logo.svg'|theme }}" alt="Npm logo">
+								<p>Npm</p>
+							</div>
+							<div class="col-6 col-md-3 col-lg-2 text-center">
+								<img class="img-fluid" src="{{ 'assets/images/autoprefixer-logo.svg'|theme }}" alt="Autoprefixer logo">
+								<p>Autoprefixer</p>
+							</div>
+							<div class="col-6 col-md-3 col-lg-2 text-center">
+								<img class="img-fluid" src="{{ 'assets/images/bootstrap-logo.svg'|theme }}" alt="Bootstrap logo">
+								<p>Bootstrap</p>
+							</div>
+							<div class="col-6 col-md-3 col-lg-2 text-center">
+								<img class="img-fluid" src="{{ 'assets/images/jquery-logo.svg'|theme }}" alt="jQuery logo">
+								<p>jQuery</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="documentation" class="home__section">
+					<h3 class="home__sec-title">How to use it</h3>
+					<div class="home__indent">
+						<ul>
+							<li>Install October CMS</li>
+							<li>Create a new folder in October /themes folder (call it for example my-awesome-theme)</li>
+							<li>Clone the repo in your theme folder</li>
+							<li>Activate the theme from October backend settings</li>
+						</ul>
+					</div>
+				</div>
+				<div class="home__section">
+					<h3 class="home__sec-title">To modify it</h3>
+					<div class="home__indent">
+						<ul>
+							<li>Open a terminal, go to your theme folder and run npm install (node_modules folder will be created)</li>
+							<li>Install more packages using npm install --save</li>
+							<li>Require your installed packages in src/js/app.js</li>
+							<li>Modify the js and scss files</li>
+							<li>Run npm run dev (npm run watch to recompile when something changes)</li>
+							<li>Add new pages, partials, content files...</li>
+						</ul>
+					</div>
+				</div>
+				<div class="home__section">
+					<h3 class="home__sec-title">When you’re ready for production…</h3>
+					<div class="home__indent">
+						<ul>
+							<li>Run npm run prod</li>
+							<li>You don't need to upload node_modules and src folders to the production host if you don't compile your assets there</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
