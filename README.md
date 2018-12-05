@@ -3,11 +3,11 @@ October CMS Webpack Theme Boilerplate
 
 This is an example theme for October CMS that includes:
 
-- npm (using laravel mix)
-- bootstrap
-- fontawesome
-- jquery
-- autoprefixer
+- Webpack (using Laravel Mix)
+- Bootstrap
+- Font Awesome
+- jQuery
+- Autoprefixer
 
 To use it:
 

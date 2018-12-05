@@ -1,5 +1,5 @@
 name: 'October CMS Webpack Theme Boilerplate'
-description: 'Example theme for October CMS that includes npm (using laravel mix), bootstrap, fontawesome, jquery and autoprefixer'
+description: 'Example theme for October CMS that includes Webpack (using Laravel Mix), Bootstrap, Font Awesome, jQuery and Autoprefixer'
 author: 'Utopig Studio'
 homepage: 'http://utopigstudio.com/'
 code: utopigs-webpack-boilerplate
