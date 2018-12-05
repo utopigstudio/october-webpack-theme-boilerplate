@@ -15385,10 +15385,13 @@ p {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+  }
+  .navbar-brand {
+    display: none;
   }
 }
 
@@ -15413,8 +15416,13 @@ p {
 
 .home__utopig {
   position: absolute;
-  right: 1rem;
+  right: .7rem;
   top: .6rem;
+}
+
+.home__utopig:hover img {
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
 }
 
 .header {
@@ -15471,4 +15479,23 @@ p {
 .home__logos p {
   color: #fff;
   margin-top: -.6rem;
+}
+
+@media (max-width: 991px) {
+  .home__utopig,
+  .home__github {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .home__indent {
+    padding-left: .8rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .home__indent {
+    padding-left: 0;
+  }
 }

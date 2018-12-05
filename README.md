@@ -17,6 +17,7 @@ To use it:
 - Activate the theme from October backend settings
 
 To modify it:
+
 - Open a terminal, go to your theme folder and run `npm install` (node_modules folder will be created)
 - Install more packages using `npm install --save`
 - Require your installed packages in src/js/app.js

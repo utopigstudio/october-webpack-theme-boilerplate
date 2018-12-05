@@ -10,8 +10,12 @@
 
 .home__utopig {
 	position: absolute;
-	right: 1rem;
+	right: .7rem;
 	top: .6rem;
+
+	&:hover img {
+		animation: float 3s ease-in-out infinite;
+	}
 }
 
 .header {
@@ -60,9 +64,28 @@
 
 .home__logos {
 	margin-top: -2.3rem;
-	
+
 	p {
 		color: $white;
 		margin-top: -.6rem;
+	}
+}
+
+@media (max-width: $lg) {
+	.home__utopig,
+	.home__github {
+		display: none;
+	}
+}
+
+@media (max-width: $md) {
+	.home__indent {
+		padding-left: .8rem;
+	}
+}
+
+@media (max-width: $sm) {
+	.home__indent {
+		padding-left: 0;
 	}
 }
