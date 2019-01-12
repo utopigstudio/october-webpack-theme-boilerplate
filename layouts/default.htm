@@ -1,4 +1,12 @@
 ==
+<?php
+function onInit()
+{
+    $themePath = 'themes/' . $this->theme->getDirName();
+    $this->layout['styles'] = url(mix('assets/css/styles.css', $themePath));
+    $this->layout['scripts'] = url(mix('assets/js/scripts.js', $themePath));
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,7 +29,7 @@
         <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}" type="image/png">
         <link rel="icon" href="{{ 'assets/images/favicon.png'|theme }}" type="image/png">
 
-        <link href="{{ 'assets/css/styles.css'|theme }}" rel="stylesheet">
+        <link href="{{ this.layout.styles }}" rel="stylesheet">
 
         {% styles %}
 
@@ -37,7 +45,7 @@
 
         </div>
 
-        <script src="{{ 'assets/js/scripts.js'|theme }}"></script>
+        <script src="{{ this.layout.scripts }}"></script>
 
         {% framework extras %}
     

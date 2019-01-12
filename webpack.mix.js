@@ -13,4 +13,5 @@ mix.options({
     })
     .setPublicPath('/')
     .sass('src/scss/app.scss', 'assets/css/styles.css')
-    .js('src/js/app.js', 'assets/js/scripts.js');
+    .js('src/js/app.js', 'assets/js/scripts.js')
+    .version();
