@@ -24,11 +24,10 @@ To modify it:
 - Modify the js and scss files
 - Run `npm run dev` (`npm run watch` to recompile when something changes)
 - [Add new pages, partials, content files...](https://octobercms.com/docs/cms/themes)
-- Run `npm run prod` when you are ready for production
 
 When you are ready for production:
 
 - Run `npm run prod`
-- You don't need to upload node_modules and src folders to the production host if you don't compile your assets there
+- You don't need to upload `node_modules` and `src` folders to the production host if you don't compile your assets there
 
 Enjoy!
