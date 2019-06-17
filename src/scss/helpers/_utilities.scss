@@ -11,3 +11,36 @@
 	width: 100%;
 	height: auto;
 }
+
+.gutters-sm {
+  margin-right: -3px;
+  margin-left: -3px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+}
+
+.gutters-md {
+  margin-right: -9px;
+  margin-left: -9px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+}
+
+.no-gutter {
+	margin-right: 0;
+	margin-left: 0;
+
+	> .col,
+	> [class*="col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}

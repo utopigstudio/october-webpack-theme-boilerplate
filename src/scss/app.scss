@@ -35,6 +35,7 @@ for more info check https://www.sitepoint.com/architecture-sass-project/
 @import "helpers/mixins";
 
 // base
+@import "base/bootstrap-theming";
 @import "base/normalize";
 @import "base/resets";
 @import "base/color-palette";

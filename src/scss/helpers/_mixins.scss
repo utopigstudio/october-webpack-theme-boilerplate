@@ -1,9 +1,3 @@
-//allows to set a font size in rem using pixels
-@mixin font-size($sizeValue: 16) {
-  font-size: ($sizeValue) + px;
-  font-size: ($sizeValue / 16) + rem;
-}
-
 @mixin easeOut {
     transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);
 }
