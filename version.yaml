@@ -1,3 +1,4 @@
 1.0.1: First version of OctoberCMS npm/Laravel mix Theme Boilerplate
 1.0.2: Asset versioning to override cache
 1.0.3: Update laravel mix to v.4
+1.0.4: Change webpack option 'browsers' to 'overrideBrowserslist'

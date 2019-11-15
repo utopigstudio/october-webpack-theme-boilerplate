@@ -5,7 +5,7 @@ mix.options({
         autoprefixer: {
             enabled: true,
             options: {
-                browsers: ['last 2 versions', '> 1%'],
+                overrideBrowserslist: ['last 2 versions', '> 1%'],
                 cascade: true,
                 grid: true,
             }
